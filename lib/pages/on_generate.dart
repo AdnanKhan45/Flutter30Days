@@ -12,12 +12,14 @@ import 'package:flutter_app/pages/sign_up.dart';
 import 'day10_animations/animation_builder_example.dart';
 import 'day10_animations/implicit_animation_example.dart';
 import 'day10_animations/simple_animations.dart';
+import 'day11/animated_drawer.dart';
+import 'day11/simple_material_drawer.dart';
 
 class OnGenerateRoutes {
   static Route<dynamic> route(RouteSettings settings) {
     final args = settings.arguments;
     if (settings.name == "/") {
-      return MaterialPageRoute(builder: (_) => SimpleAnimationExample());
+      return MaterialPageRoute(builder: (_) => AnimatedDrawerExample());
     } else if (settings.name == "/login") {
       return MaterialPageRoute(builder: (_) => login_page());
     } else if (settings.name == "/signup") {
